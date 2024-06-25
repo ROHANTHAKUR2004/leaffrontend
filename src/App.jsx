@@ -31,18 +31,24 @@ function App() {
       <Routes>
         <Route 
           path="/" 
-          element={<div ref={homeRef}><HomePagee /></div>} 
+          element={
+          <div ref={homeRef}>
+            <HomePagee />
+            <Titlee/>
+            <Cardd />
+          
+          </div>
+             
+        } 
+         
         />
         <Route 
           path="/content" 
           element={
-            <>
-              <Titlee/>
-              <Cardd />
               <div ref={footerRef}>
                 <Footerr />
               </div>
-            </>
+           
           } 
         />
       </Routes>
