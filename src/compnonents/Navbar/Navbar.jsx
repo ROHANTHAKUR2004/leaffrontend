@@ -1,6 +1,7 @@
 // src/components/Navbar/Navbar.js
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
+import logo from '../../assets/ni.jpg'
 
 const Navbarr = ({ scrollToHome, scrollToFooter }) => {
   const [isOpen, setIsOpen] = useState(false);
@@ -14,11 +15,11 @@ const Navbarr = ({ scrollToHome, scrollToFooter }) => {
       <div className="container mx-auto flex justify-between items-center">
         <div className="text-white text-xl font-bold">
           <img 
-            src="https://www.shutterstock.com/shutterstock/photos/2240616851/display_1500/stock-vector-cup-of-tea-vector-logo-design-creative-2240616851.jpg" 
+            src={logo}
             alt="Logo" 
             className="h-10 rounded-full inline-block mr-2" 
           />
-          ECO PLATES
+             ECOयुग PLATES
         </div>
         <div className="hidden md:flex">
           <Link to="/" onClick={scrollToHome} className="text-white mx-2 cursor-pointer">Home</Link>
